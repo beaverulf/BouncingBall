@@ -12,6 +12,11 @@ public class PVector {
 		x = x + v.getX();
 		y = y + v.getY();
 	}
+	
+	public void sub(PVector v){
+	    x = x - v.getX();
+	    y = y - v.getY();
+	}
 
 	public void setX(float x) {
 		this.x = x;
