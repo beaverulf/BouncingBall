@@ -17,6 +17,15 @@ public class PVector {
 	    x = x - v.getX();
 	    y = y - v.getY();
 	}
+	
+	public void div(PVector v){
+		x = x/v.getX();
+		y = y/v.getY();
+	}
+	
+	public float mag(){
+		return (float)Math.sqrt(x*x + y*y);
+	}
 
 	public void setX(float x) {
 		this.x = x;
