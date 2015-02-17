@@ -12,7 +12,7 @@ public class Ball {
 	public void update() {
 
 		location.add(velocity);
-		velocity.add(acceleration);
+//		velocity.add(acceleration);
 
 		if (location.getX() < 0 || location.getX() + size > 500) {
 			velocity.setX(velocity.getX() * -1);
