@@ -17,30 +17,30 @@ public class GamePanel extends JPanel implements ActionListener{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-//	Ball ball = new Ball();
+	Ball ball = new Ball();
 //	Line line = new Line();
-	Walker walker = new Walker(500);
+//	Walker walker = new Walker(500);
 
 	public GamePanel() {		
 		this.setPreferredSize(new Dimension(500,500));
-		Timer tim = new Timer(30, this);
+		Timer tim = new Timer(11, this);
 		tim.start();
 	}
 	
 	private void update(){
-//		ball.update();
+		ball.update();
 //		line.update();
-		walker.update();
+//		walker.update();
 	}
 	
 	@Override
 	public void paintComponent(Graphics g){
-//		g.setColor(Color.black);
-//		g.fillRect(0, 0, 500, 500);
+		g.setColor(Color.WHITE);
+		g.fillRect(0, 0, 500, 500);
 //		line.paint(g);
 		
-		walker.paint(g);
-//		ball.paint(g);
+//		walker.paint(g);
+		ball.paint(g);
 	}
 
 	@Override
